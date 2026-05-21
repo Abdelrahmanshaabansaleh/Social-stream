@@ -4,8 +4,6 @@ import {
   Link as LinkIcon, 
   Loader2, 
   AlertCircle, 
-  Facebook, 
-  Linkedin, 
   Twitter, 
   Play, 
   ExternalLink,
@@ -23,9 +21,7 @@ interface VideoInfo {
 
 const SUPPORTED_PLATFORMS = [
   { name: 'TikTok', icon: Play, color: 'text-pink-500' },
-  { name: 'Facebook', icon: Facebook, color: 'text-blue-600' },
-  { name: 'Twitter', icon: Twitter, color: 'text-sky-400' },
-  { name: 'LinkedIn', icon: Linkedin, color: 'text-blue-700' },
+  { name: 'X', icon: Twitter, color: 'text-slate-800' },
 ];
 
 export default function App() {
@@ -126,7 +122,7 @@ export default function App() {
               transition={{ delay: 0.1 }}
               className="text-lg text-slate-500 max-w-2xl mx-auto"
             >
-              High-quality video downloader for TikTok (no watermark), Facebook, LinkedIn, and more. Simple, secure, and always free.
+              High-quality video downloader for TikTok (no watermark) and X.
             </motion.p>
           </div>
 
@@ -264,7 +260,7 @@ export default function App() {
         {/* Steps/Info */}
         <div className="mt-20 w-full grid grid-cols-1 sm:grid-cols-3 gap-12 border-t border-slate-200 pt-20">
           {[
-            { step: '01', title: 'Copy Link', desc: 'Copy the video link from TikTok, Facebook, or any site.' },
+            { step: '01', title: 'Copy Link', desc: 'Copy the video link from TikTok, X, or any site.' },
             { step: '02', title: 'Paste Link', desc: 'Paste the link here. We handle the rest automatically.' },
             { step: '03', title: 'Download', desc: 'Get your high-quality video without any watermarks.' }
           ].map((item) => (

@@ -1,6 +1,6 @@
 {
   "name": "SocialStream Downloader",
-  "description": "A powerful and intuitive multi-platform video downloader for TikTok (no watermark), Facebook, LinkedIn, and Twitter.",
+  "description": "A powerful and intuitive video downloader for TikTok (no watermark) and X.",
   "requestFramePermissions": [],
   "majorCapabilities": []
 }
