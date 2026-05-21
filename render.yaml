@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: socialstream-downloader
+    runtime: node
+    plan: free # Render's free tier
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false # User can input this securely in the Render dashboard
